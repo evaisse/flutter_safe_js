@@ -1,24 +1,24 @@
-name: flutter_safe_js
-description: A basic JS bridge to call javascript external context function, seamlessly working on mac/ios/android/...
+name: flutter_safe_js_web
+description: web interface for flutter_safe_js
+homepage: https://github.com/evaisse/flutter_safe_js
+repository: https://github.com/evaisse/flutter_safe_js/tree/master/packages/flutter_safe_js_web
+issue_tracker: https://github.com/evaisse/flutter_safe_js/issues
 version: 0.0.1
 
-homepage: https://github.com/evaisse/flutter_safe_js_web.dart
-publish_to: https://pub.dev
-
 environment:
-  sdk: '>=2.14.0 <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.8.0"
 
 dependencies:
-  flutter_safe_js_web: ^0.0.1
+  flutter_safe_js_platform_interface: ^0.0.1
 
 dev_dependencies:
   test: ^1.21.1
 
 flutter:
   plugin:
+    implements: flutter_safe_js
     platforms:
-      android:
-      ios:
-      macos:
       web:
-        default_package: flutter_safe_js_web
+        pluginClass: FlutterSafeJsPlugin
+        fileName: flutter_safe_js_web.dart
