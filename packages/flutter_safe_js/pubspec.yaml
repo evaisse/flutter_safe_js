@@ -3,7 +3,7 @@ description: A basic JS bridge to call javascript external context function, sea
 homepage: https://github.com/evaisse/flutter_safe_js
 repository: https://github.com/evaisse/flutter_safe_js/tree/master/packages/flutter_safe_js
 issue_tracker: https://github.com/evaisse/flutter_safe_js/issues
-version: 0.0.1
+version: 0.0.2
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
