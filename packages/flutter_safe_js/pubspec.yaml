@@ -18,15 +18,16 @@ dev_dependencies:
 
 flutter:
   plugin:
-    android:
-      default_package: flutter_safe_js_platform_interface
-    ios:
-      default_package: flutter_safe_js_platform_interface
-    linux:
-      default_package: flutter_safe_js_platform_interface
-    macos:
-      default_package: flutter_safe_js_platform_interface
-    web:
-      default_package: flutter_safe_js_web
-    windows:
-      default_package: flutter_safe_js_platform_interface
+    platforms:
+      android:
+        default_package: flutter_safe_js_platform_interface
+      ios:
+        default_package: flutter_safe_js_platform_interface
+      linux:
+        default_package: flutter_safe_js_platform_interface
+      macos:
+        default_package: flutter_safe_js_platform_interface
+      web:
+        default_package: flutter_safe_js_web
+      windows:
+        default_package: flutter_safe_js_platform_interface
