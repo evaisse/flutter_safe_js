@@ -25,5 +25,5 @@ flutter:
     implements: flutter_safe_js
     platforms:
       web:
-        pluginClass: FlutterSafeJsPlugin
+        pluginClass: FlutterSafeJsWeb
         fileName: flutter_safe_js_web.dart
