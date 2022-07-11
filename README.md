@@ -1,7 +1,6 @@
 # flutter_safe_js
 
-
-
+A js bridge implementation that work seamlessly on ios/android/web/...
 
 ### Sources 
 

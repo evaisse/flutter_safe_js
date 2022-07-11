@@ -1,5 +1,5 @@
-name: flutter_safe_js.dart
-description: HTTP RFC1738 / RFC1867 compliant query string encoder and decoder, compatible with the PHP & jQuery traditional syntax for nested array/objects
+name: flutter_safe_js
+description: A basic JS bridge to call javascript external context function, seamlessly working on mac/ios/android/...
 version: 0.0.1
 
 homepage: https://github.com/evaisse/flutter_safe_js.dart
@@ -11,6 +11,9 @@ environment:
 dependencies:
   flutter_safe_js_web: ^0.0.1
 
+dev_dependencies:
+  test: ^1.21.1
+
 flutter:
   plugin:
     platforms:
@@ -19,6 +22,3 @@ flutter:
       macos:
       web:
         default_package: flutter_safe_js_web
-
-dev_dependencies:
-  test: ^1.21.1
