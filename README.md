@@ -1,7 +1,9 @@
 # flutter_safe_js
 
-A js bridge implementation that work seamlessly on ios/android/web/...
+A basic JS bridge to call javascript external context function, seamlessly working on mac/ios/android/...
 
-### Sources 
+Looks at `packages` folder for detailed introduction of platform packages.
 
- - https://medium.com/norsys-octogone/scalable-implementation-for-your-flutter-plugins-a5ac136e5cb4
+### Sources
+
+- https://medium.com/norsys-octogone/scalable-implementation-for-your-flutter-plugins-a5ac136e5cb4
