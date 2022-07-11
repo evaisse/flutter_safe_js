@@ -1,8 +1,10 @@
 name: flutter_safe_js_platform_interface
 description: Platform interface for flutter_safe_js
+homepage: https://github.com/evaisse/flutter_safe_js
+repository: https://github.com/evaisse/flutter_safe_js/tree/master/packages/flutter_safe_js_platform_interface
+issue_tracker: https://github.com/evaisse/flutter_safe_js/issues
 version: 0.0.1
 
-homepage: https://github.com/evaisse/flutter_safe_js
 publish_to: https://pub.dev
 
 environment:
