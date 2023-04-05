@@ -3,7 +3,7 @@ description: web interface for flutter_safe_js
 homepage: https://github.com/evaisse/flutter_safe_js
 repository: https://github.com/evaisse/flutter_safe_js/tree/master/packages/flutter_safe_js_web
 issue_tracker: https://github.com/evaisse/flutter_safe_js/issues
-version: 0.0.2
+version: 0.0.5
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -15,7 +15,7 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
 
-  flutter_safe_js_platform_interface: ^0.0.1
+  flutter_safe_js_platform_interface: ^0.0.5
 
 dev_dependencies:
   test: ^1.21.1

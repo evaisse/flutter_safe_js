@@ -1,6 +1,10 @@
 import 'package:flutter_safe_js_platform_interface/flutter_safe_js_platform_interface.dart';
 
 class FlutterSafeJs {
+  Future<void> expose(String javascriptFunctionName, FlutterSafeJsMethodHandler fn) {
+    return FlutterSafeJsPlatformInterface.instance.expose(javascriptFunctionName, fn);
+  }
+
   Future<void> callMethod(String javascriptFunctionName, List arguments) {
     return FlutterSafeJsPlatformInterface.instance.callMethod(javascriptFunctionName, arguments);
   }

@@ -11,6 +11,13 @@ class FlutterSafeJsWeb extends FlutterSafeJsPlatformInterface {
   }
 
   @override
+  Future<void> expose(String javascriptFunctionName, FlutterSafeJsMethodHandler fn) {
+    /// @see https://stackoverflow.com/questions/30498880/get-a-collection-of-arguments-passed-to-a-dart-function-constructor-call
+    js.context[javascriptFunctionName] = fn;
+    return Future.value();
+  }
+
+  @override
   Future<void> callMethod(String javascriptFunctionName, List<dynamic> arguments) {
     return Future.value(js.context.callMethod(javascriptFunctionName, arguments));
   }

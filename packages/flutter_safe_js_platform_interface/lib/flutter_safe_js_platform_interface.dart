@@ -2,6 +2,8 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'flutter_safe_js_method_channel.dart';
 
+typedef FlutterSafeJsMethodHandler = dynamic Function(dynamic argument);
+
 abstract class FlutterSafeJsPlatformInterface extends PlatformInterface {
   static FlutterSafeJsPlatformInterface _instance = FlutterSafeJsMethodChannel();
   static final Object _token = Object();
@@ -19,6 +21,10 @@ abstract class FlutterSafeJsPlatformInterface extends PlatformInterface {
   static set instance(FlutterSafeJsPlatformInterface instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
+  }
+
+  Future<void> expose(String javascriptFunctionName, FlutterSafeJsMethodHandler fn) {
+    throw UnimplementedError('expose() has not been implemented.');
   }
 
   Future<void> callMethod(String javascriptFunctionName, List<dynamic> arguments) {
